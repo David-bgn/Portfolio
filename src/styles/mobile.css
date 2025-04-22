@@ -1,0 +1,219 @@
+@media only screen and (max-width: 768px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 15rem;
+  }
+
+  main {
+    width: 100%;
+    max-width: 430px;
+  }
+
+  .introduction {
+    display: block;
+    flex-direction: column;
+    margin: 2rem;
+    padding: 2rem 1rem;
+  }
+
+  .introduction::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 38rem;
+    left: 3rem;
+    width: 80%;
+    height: 1px;
+    background-color: white;
+    margin-top: 1rem;
+  }
+
+  .photo {
+    width: 8rem;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .github {
+    margin: 0;
+  }
+
+  .mail-to {
+    position: relative;
+    top: -4.4rem;
+    left: 15rem;
+  }
+
+  .logo {
+    margin-left: 1rem;
+  }
+  .navigation {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #082032;
+    position: absolute;
+    top: 4.2rem;
+    right: 3rem;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 10;
+  }
+
+  .navigation a:active {
+    color: #ff4c29;
+  }
+
+  #hamburger14-input:checked + label + .navigation {
+    display: flex;
+  }
+
+  .hamburger14 {
+    position: relative;
+    width: 40px;
+    height: 40px;
+  }
+  .hamburger14 input {
+    display: none;
+  }
+  .hamburger14:hover .line {
+    background-color: white;
+  }
+  .hamburger14:hover .circle {
+    border-color: white;
+  }
+  .hamburger14-container {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+  .hamburger14 .circle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid white;
+    transition: all 0.3s ease;
+    transform-origin: center;
+  }
+  .hamburger14 .line {
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background-color: white;
+    left: 8px;
+    transition: all 0.3s ease;
+  }
+  .hamburger14 .line1 {
+    top: 14px;
+  }
+  .hamburger14 .line2 {
+    top: 19px;
+  }
+  .hamburger14 .line3 {
+    top: 24px;
+  }
+  #hamburger14-input:checked + label .circle {
+    transform: rotate(45deg);
+    border-color: white;
+  }
+  #hamburger14-input:checked + label .line {
+    background-color: white;
+  }
+  #hamburger14-input:checked + label .line1 {
+    transform: rotate(45deg) translate(3px, 4px);
+  }
+  #hamburger14-input:checked + label .line2 {
+    opacity: 0;
+  }
+  #hamburger14-input:checked + label .line3 {
+    transform: rotate(-45deg) translate(4px, -4px);
+  }
+
+  #about {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem 1rem;
+    gap: 1.5rem;
+  }
+
+  #about::after {
+    width: 80%;
+    position: absolute;
+    top: 66rem;
+  }
+
+  .prog-logo {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .about-content {
+    width: 100%;
+  }
+
+  .about-content > h3 {
+    font-size: 5rem;
+    top: 0;
+    left: 0;
+    position: relative;
+    opacity: 0.3;
+    z-index: 1;
+    -webkit-text-stroke: 1px #ff4c29;
+  }
+
+  .about-content > p {
+    font-size: 1rem;
+    line-height: 1.5;
+    word-wrap: break-word;
+  }
+
+  #projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: auto;
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+
+  #projects > h3 {
+    position: relative;
+    font-size: 5rem;
+    top: 0;
+    left: -1rem;
+    opacity: 0.3;
+    z-index: 0;
+    -webkit-text-stroke: 1px #ff4c29;
+  }
+
+  #projects::after {
+    position: absolute;
+    bottom: 0;
+    top: 83rem;
+    width: 80%;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
