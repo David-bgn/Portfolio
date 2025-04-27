@@ -32,9 +32,9 @@
     content: "";
     display: block;
     position: absolute;
-    top: 38rem;
-    left: 3rem;
-    width: 80%;
+    top: 35rem;
+    left: 2rem;
+    width: 83%;
     height: 1px;
     background-color: white;
     margin-top: 1rem;
@@ -44,6 +44,7 @@
     width: 8rem;
     height: auto;
     margin-bottom: 1rem;
+    object-fit: cover;
   }
 
   .github {
@@ -152,15 +153,16 @@
   }
 
   #about::after {
-    width: 80%;
+    width: 90%;
     position: absolute;
-    top: 66rem;
+    top: 30rem;
   }
 
   .prog-logo {
     width: 100%;
     height: auto;
     overflow: hidden;
+    display: none;
   }
 
   .about-content {
@@ -207,8 +209,13 @@
   #projects::after {
     position: absolute;
     bottom: 0;
-    top: 83rem;
-    width: 80%;
+    top: 80rem;
+    width: 90%;
+  }
+
+  .card13 {
+    position: relative;
+    top: -4rem;
   }
 
   footer {
